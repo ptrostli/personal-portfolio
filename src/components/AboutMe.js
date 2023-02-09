@@ -20,8 +20,8 @@ export const AboutMe = () => {
               <p>When I'm not working I love to play video games, discover new music, and watch anime. <strong>Just your average geek..</strong>😅</p>
             </div>
               <div className="social-icon">
-                <a href="#"><img src={linkedinIcon} alt="" /></a>
-                <a href="#"><img src={githubIcon} alt="" /></a>
+                <a href="https://linkedin.com/in/ptrostli"><img src={linkedinIcon} alt="" /></a>
+                <a href="https://github.com/ptrostli"><img src={githubIcon} alt="" /></a>
               </div>
           </Col>
         </Row>
