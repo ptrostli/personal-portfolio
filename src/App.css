@@ -85,12 +85,13 @@ p.danger {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url('./assets/img/bitcity.png');
+  padding: 50px 0 0 0;
+  background-image: url('./assets/img/darkstarynight.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
+  text-align: left;
+  height: 80%;
 }
 .banner h1 {
   font-size: 65px;
@@ -100,12 +101,17 @@ p.danger {
   margin-bottom: 20px;
   display: block;
 }
-.banner p {
-  color: #B8B8B8;
-  font-size: 18px;
+.banner h2 {
+  font-size: 46px;
+  font-weight: 700;
   letter-spacing: 0.8px;
-  line-height: 1.5em;
-  width: 96%;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+  color: rgb(255, 255, 255);
+  /* background: -webkit-linear-gradient(45.21deg, #07c0ad -5.91%, #bd2fbd 111.58%); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
 }
 @keyframes updown {
     0% {
@@ -124,7 +130,7 @@ p.danger {
 
 /************ About Css ************/
 .about {
-  text-align: center;
+  text-align: left;
   background: linear-gradient(90.21deg, #c4c23d -5.91%, #2fbd47 111.58%);
   padding: 50px 0px;
   margin: auto;
@@ -134,7 +140,7 @@ p.danger {
   justify-content: center;
 }
 .about h2 {
-  margin: 0;
+  /* margin: 0px 5%; */
   font-size: 45px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -142,45 +148,11 @@ p.danger {
   margin-bottom: 20px;
   display: block;
 }
+.about p {
+  color: white;
+}
 .about-imgbx {
   max-width: 50%;
-}
-.social-icon {
-  display: inline-block;
-  margin-left: 14px;
-}
-.social-icon a {
-  width: 60px;
-  height: 60px;
-  background: rgba(217, 217, 217, 0.1);
-  display: inline-flex;
-  border-radius: 50%;
-  margin-right: 6px;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-.social-icon a::before {
-  content: "";
-  width: 60px;
-  height: 60px;
-  position: absolute;
-  background-color: #ffffff;
-  border-radius: 50%;
-  transform: scale(0);
-transition: 0.3s ease-in-out;
-}
-.social-icon a:hover::before {
-  transform: scale(1);
-}
-.social-icon a img {
-width: 40%;
-z-index: 1;
-transition: 0.3s ease-in-out;
-}
-.social-icon a:hover img {
-filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
 /************ Projects Css ************/
@@ -190,17 +162,17 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   background: linear-gradient(90.21deg, #36a8aa -5.91%, #4A2FBD 111.58%);
 }
 .project h2 {
+  align-items: left;
   font-size: 45px;
 	font-weight: 700;
-  text-align: center;
 }
 
 .project h5 {
   color: #fdfdfd;
   font-size: 18px;
-  text-align: center;
-  margin: 14px auto 30px auto;
-  width: 66%;
+  /* text-align: center; */
+  /* margin: 14px auto 30px auto; */
+  /* width: 90%; */
 }
 
 .project p {
@@ -208,9 +180,9 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px auto 30px auto;
-  text-align: center;
-  width: 56%;
+  /* margin: 14px auto 30px auto; */
+  /* text-align: center; */
+  /* width: 90%; */
 }
 
 .proj-imgbx {
@@ -265,70 +237,49 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 60px 0;
 }
-.contact img {
-  width: 92%;
-}
 .contact h2 {
-	font-size: 45px;
+  font-size: 45px;
 	font-weight: 700;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
 }
-.contact form input, .contact form textarea {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.1);
+
+/************ Social Icons Css ************/
+.social-icon {
+  display: inline-block;
+  margin: 14px;
+  color: red;
+}
+.social-icon a {
+  width: 50px;
+  height: 50px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 20px;
-  color: #fff;
-  margin: 0 0 8px 0;
-  padding: 18px 26px;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  transition: 0.3s ease-in-out;
 }
-.contact form input:focus, .contact form textarea:focus {
-  background: rgba(255, 255, 255, 1);
-  color: #121212;
-}
-.contact form input::placeholder, .contact form textarea::placeholder {
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff;
-}
-.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
-  color: #121212;
-  opacity: 0.8;
-}
-.contact form button {
-  font-weight: 700;
-  color: #000;
-  background-color: #fff;
-  padding: 14px 48px;
-  font-size: 18px;
-  margin-top: 25px;
-  border-radius: 0;
-  position: relative;
-  transition: 0.3s ease-in-out;
-}
-.contact form button span {
-  z-index: 1;
-  position: relative;
-}
-.contact form button:hover {
-  color: #fff;
-}
-.contact form button::before {
+.social-icon a::before {
   content: "";
-  background: #121212;
-  width: 0;
-  height: 100%;
+  width: 50px;
+  height: 50px;
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: scale(0);
   transition: 0.3s ease-in-out;
 }
-.contact form button:hover::before {
-  width: 100%;
+.social-icon a:hover::before {
+  transform: scale(1);
+}
+.social-icon a img {
+  width: 40%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+.social-icon a:hover img {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }

@@ -48,12 +48,13 @@ export const Banner = () => {
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="align-items-center">
+        <Row className="align-items-left">
           <Col xs={12} md={12} xl={12}>
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h1>{`Hey! I'm Phil Trostli,`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Engineer", "Web Developer", "Geek/Gamer"]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hey! I'm Phil Trostli,`}</h1>
+                <h2><span className="txt-rotate" dataPeriod="1000" data-rotate='["Software Engineer", "Web Developer", "Geek/Gamer"]'>{`> ${text}`}</span></h2>
               </div>}
             </TrackVisibility>
           </Col>
